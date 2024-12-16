@@ -1,0 +1,46 @@
+<!-- Página de Login:
+ ○ A página deve conter:
+        ■ Um campo de e-mail (input do tipo "email").
+        ■ Um campo de senha(input do tipo "password").
+        ■ Um botão de Login.
+
+○ Ao clicar no botão "Login", as informações inseridas (e-mail e senha) devem ser validadas:
+        ■ Validação simples: garantir que ambos os campos não estejam vazios e que o campo de senha contenha 8 caracteres ou mais.
+
+○ Após a validação:
+
+        ■ Exibir os valores de e-mail e senha no console do navegador usando console.log() ou um alert()
+        ■ Redirecionar o usuário para a página de catálogo -->
+
+<!DOCTYPE html>
+<html lang="pt"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login - Shop Now</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Shop Now</h1>
+        <p>Bem vindo!</p>
+    </header>
+
+    <div class="login-container">
+    <form id="loginForm">
+        <h1>Login</h1>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha"  required minlength="8">
+        <br>
+        <button type="submit" onclick="Login()" >Login</button>
+    </form>
+    <script src="login.js"></script>
+</body>
+
+</html>

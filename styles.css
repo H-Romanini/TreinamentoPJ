@@ -1,0 +1,75 @@
+/* Estilo e Layout:
+ ○ Use CSS para estilizar as duas páginas.
+ ○ A página de login deve ter uma apresentação simples e centralizada, com um
+ formulário bem organizado.
+ ○ A página de catálogo deve utilizar um layout em grade (grid) ou flexbox para
+ organizar os produtos. */
+
+
+ .catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.produto {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+.produto img {
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  background-color: #1e1e1e; 
+  color: #f0f0f0; 
+  padding: 20px;
+}
+  
+.login-container {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+input, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.product-image {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 5px; 
+}
+
+.header {
+  background-color: #fd0404;
+  color: white; 
+  padding: 10px; 
+  text-align: center; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 1000;
+
+}
+
+
+
+
+
+  
+  
